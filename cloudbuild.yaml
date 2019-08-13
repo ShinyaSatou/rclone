@@ -1,0 +1,139 @@
+steps:
+- name: 'gcr.io/cloud-builders/go'
+  args: ['build', 'bazil.org/fuse']
+- name: 'gcr.io/cloud-builders/go'
+  args: ['build', 'cloud.google.com/go']
+- name: 'gcr.io/cloud-builders/go'
+  args: ['build', 'azure-pipeline-go']
+- name: 'gcr.io/cloud-builders/go'
+  args: ['build', 'github.com/Azure/azure-storage-blob-go']
+- name: 'gcr.io/cloud-builders/go'
+  args: ['build', 'github.com/Azure/go-ansiterm']
+- name: 'gcr.io/cloud-builders/go'
+  args: ['build', 'github.com/Unknwon/goconfig']
+- name: 'gcr.io/cloud-builders/go'
+  args: ['build', 'github.com/a8m/tree']
+- name: 'gcr.io/cloud-builders/go'
+  args: ['build', 'github.com/abbot/go-http-auth']
+- name: 'gcr.io/cloud-builders/go'
+  args: ['build', 'github.com/anacrolix/dms']
+- name: 'gcr.io/cloud-builders/go'
+  args: ['build', 'github.com/atotto/clipboard']
+- name: 'gcr.io/cloud-builders/go'
+  args: ['build', 'github.com/aws/aws-sdk-go']
+- name: 'gcr.io/cloud-builders/go'
+  args: ['build', 'github.com/billziss-gh/cgofuse']
+- name: 'gcr.io/cloud-builders/go'
+  args: ['build', 'github.com/coreos/bbolt']
+- name: 'gcr.io/cloud-builders/go'
+  args: ['build', 'github.com/djherbis/times']
+- name: 'gcr.io/cloud-builders/go'
+  args: ['build', 'github.com/dropbox/dropbox-sdk-go-unofficial']
+- name: 'gcr.io/cloud-builders/go'
+  args: ['build', 'github.com/goftp/file-driver']
+- name: 'gcr.io/cloud-builders/go'
+  args: ['build', 'github.com/goftp/server']
+- name: 'gcr.io/cloud-builders/go'
+  args: ['build', 'github.com/google/go-querystring']
+- name: 'gcr.io/cloud-builders/go'
+  args: ['build', 'github.com/gopherjs/gopherjs']
+- name: 'gcr.io/cloud-builders/go'
+  args: ['build', 'github.com/jlaffaye/ftp']
+- name: 'gcr.io/cloud-builders/go'
+  args: ['build', 'github.com/jzelinskie/whirlpool']
+- name: 'gcr.io/cloud-builders/go'
+  args: ['build', 'github.com/kardianos/osext']
+- name: 'gcr.io/cloud-builders/go'
+  args: ['build', 'github.com/kisielk/gotool']
+- name: 'gcr.io/cloud-builders/go'
+  args: ['build', 'github.com/koofr/go-httpclient']
+- name: 'gcr.io/cloud-builders/go'
+  args: ['build', 'github.com/koofr/go-koofrclient']
+- name: 'gcr.io/cloud-builders/go'
+  args: ['build', 'github.com/kr/fs']
+- name: 'gcr.io/cloud-builders/go'
+  args: ['build', 'github.com/kr/pretty']
+- name: 'gcr.io/cloud-builders/go'
+  args: ['build', 'github.com/mattn/go-runewidth']
+- name: 'gcr.io/cloud-builders/go'
+  args: ['build', 'github.com/mitchellh/go-homedir']
+- name: 'gcr.io/cloud-builders/go'
+  args: ['build', 'github.com/ncw/go-acd']
+- name: 'gcr.io/cloud-builders/go'
+  args: ['build', 'github.com/ncw/swift']
+- name: 'gcr.io/cloud-builders/go'
+  args: ['build', 'github.com/neelance/astrewrite']
+- name: 'gcr.io/cloud-builders/go'
+  args: ['build', 'github.com/neelance/sourcemap']
+- name: 'gcr.io/cloud-builders/go'
+  args: ['build', 'github.com/nsf/termbox-go']
+- name: 'gcr.io/cloud-builders/go'
+  args: ['build', 'github.com/okzk/sdnotify']
+- name: 'gcr.io/cloud-builders/go'
+  args: ['build', 'github.com/onsi/ginkgo']
+- name: 'gcr.io/cloud-builders/go'
+  args: ['build', 'github.com/onsi/gomega']
+- name: 'gcr.io/cloud-builders/go'
+  args: ['build', 'github.com/patrickmn/go-cache']
+- name: 'gcr.io/cloud-builders/go'
+  args: ['build', 'github.com/pengsrc/go-shared']
+- name: 'gcr.io/cloud-builders/go'
+  args: ['build', 'github.com/pkg/errors']
+- name: 'gcr.io/cloud-builders/go'
+  args: ['build', 'github.com/pkg/sftp']
+- name: 'gcr.io/cloud-builders/go'
+  args: ['build', 'github.com/rfjakob/eme']
+- name: 'gcr.io/cloud-builders/go'
+  args: ['build', 'github.com/sevlyar/go-daemon']
+- name: 'gcr.io/cloud-builders/go'
+  args: ['build', 'github.com/shurcooL/httpfs']
+- name: 'gcr.io/cloud-builders/go'
+  args: ['build', 'github.com/sirupsen/logrus']
+- name: 'gcr.io/cloud-builders/go'
+  args: ['build', 'github.com/skratchdot/open-golang']
+- name: 'gcr.io/cloud-builders/go'
+  args: ['build', 'github.com/smartystreets/assertions']
+- name: 'gcr.io/cloud-builders/go'
+  args: ['build', 'github.com/smartystreets/goconvey']
+- name: 'gcr.io/cloud-builders/go'
+  args: ['build', 'github.com/spf13/cobra']
+- name: 'gcr.io/cloud-builders/go'
+  args: ['build', 'github.com/spf13/pflag']
+- name: 'gcr.io/cloud-builders/go'
+  args: ['build', 'github.com/stretchr/testify']
+- name: 'gcr.io/cloud-builders/go'
+  args: ['build', 'github.com/t3rm1n4l/go-mega']
+- name: 'gcr.io/cloud-builders/go'
+  args: ['build', 'github.com/xanzy/ssh-agent']
+- name: 'gcr.io/cloud-builders/go'
+  args: ['build', 'github.com/yunify/qingstor-sdk-go']
+- name: 'gcr.io/cloud-builders/go'
+  args: ['build', 'go.etcd.io/bbolt']
+- name: 'gcr.io/cloud-builders/go'
+  args: ['build', 'golang.org/x/crypto']
+- name: 'gcr.io/cloud-builders/go'
+  args: ['build', 'golang.org/x/net']
+- name: 'gcr.io/cloud-builders/go'
+  args: ['build', 'golang.org/x/oauth2']
+- name: 'gcr.io/cloud-builders/go'
+  args: ['build', 'golang.org/x/sync']
+- name: 'gcr.io/cloud-builders/go'
+  args: ['build', 'golang.org/x/sys']
+- name: 'gcr.io/cloud-builders/go'
+  args: ['build', 'golang.org/x/text']
+- name: 'gcr.io/cloud-builders/go'
+  args: ['build', 'golang.org/x/time']
+- name: 'gcr.io/cloud-builders/go'
+  args: ['build', 'google.golang.org/api']
+- name: 'gcr.io/cloud-builders/go'
+  args: ['build', 'google.golang.org/genproto']
+- name: 'gcr.io/cloud-builders/go'
+  args: ['build', 'google.golang.org/grpc']
+- name: 'gcr.io/cloud-builders/go'
+  args: ['build', 'gopkg.in/yaml.v2']
+- name: 'gcr.io/cloud-builders/go'
+  args: ['build', 'rclone.go']
+steps:
+- name: 'gcr.io/cloud-builders/git'
+  args: ['clone', 'https://github.com/rclone/rclone']
+  env: ['PROJECT_ROOT=~/rclone']
