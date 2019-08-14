@@ -1,139 +1,203 @@
 steps:
 - name: 'gcr.io/cloud-builders/go'
-  args: ['build', 'bazil.org/fuse']
+  args: ['install', 'bazil.org/fuse']
+  env: "GOPATH=golib"
 - name: 'gcr.io/cloud-builders/go'
-  args: ['build', 'cloud.google.com/go']
+  args: ['install', 'cloud.google.com/go']
+  env: "GOPATH=golib"
 - name: 'gcr.io/cloud-builders/go'
-  args: ['build', 'azure-pipeline-go']
+  args: ['install', 'github.com/Azure/azure-pipeline-go']
+  env: "GOPATH=golib"
 - name: 'gcr.io/cloud-builders/go'
-  args: ['build', 'github.com/Azure/azure-storage-blob-go']
+  args: ['install', 'github.com/Azure/azure-storage-blob-go']
+  env: "GOPATH=golib"
 - name: 'gcr.io/cloud-builders/go'
-  args: ['build', 'github.com/Azure/go-ansiterm']
+  args: ['install', 'github.com/Azure/go-ansiterm']
+  env: "GOPATH=golib"
 - name: 'gcr.io/cloud-builders/go'
-  args: ['build', 'github.com/Unknwon/goconfig']
+  args: ['install', 'github.com/Unknwon/goconfig']
+  env: "GOPATH=golib"
 - name: 'gcr.io/cloud-builders/go'
-  args: ['build', 'github.com/a8m/tree']
+  args: ['install', 'github.com/a8m/tree']
+  env: "GOPATH=golib"
 - name: 'gcr.io/cloud-builders/go'
-  args: ['build', 'github.com/abbot/go-http-auth']
+  args: ['install', 'github.com/abbot/go-http-auth']
+  env: "GOPATH=golib"
 - name: 'gcr.io/cloud-builders/go'
-  args: ['build', 'github.com/anacrolix/dms']
+  args: ['install', 'github.com/anacrolix/dms']
+  env: "GOPATH=golib"
 - name: 'gcr.io/cloud-builders/go'
-  args: ['build', 'github.com/atotto/clipboard']
+  args: ['install', 'github.com/atotto/clipboard']
+  env: "GOPATH=golib"
 - name: 'gcr.io/cloud-builders/go'
-  args: ['build', 'github.com/aws/aws-sdk-go']
+  args: ['install', 'github.com/aws/aws-sdk-go']
+  env: "GOPATH=golib"
 - name: 'gcr.io/cloud-builders/go'
-  args: ['build', 'github.com/billziss-gh/cgofuse']
+  args: ['install', 'github.com/billziss-gh/cgofuse']
+  env: "GOPATH=golib"
 - name: 'gcr.io/cloud-builders/go'
-  args: ['build', 'github.com/coreos/bbolt']
+  args: ['install', 'github.com/coreos/bbolt']
+  env: "GOPATH=golib"
 - name: 'gcr.io/cloud-builders/go'
-  args: ['build', 'github.com/djherbis/times']
+  args: ['install', 'github.com/djherbis/times']
+  env: "GOPATH=golib"
 - name: 'gcr.io/cloud-builders/go'
-  args: ['build', 'github.com/dropbox/dropbox-sdk-go-unofficial']
+  args: ['install', 'github.com/dropbox/dropbox-sdk-go-unofficial']
+  env: "GOPATH=golib"
 - name: 'gcr.io/cloud-builders/go'
-  args: ['build', 'github.com/goftp/file-driver']
+  args: ['install', 'github.com/goftp/file-driver']
+  env: "GOPATH=golib"
 - name: 'gcr.io/cloud-builders/go'
-  args: ['build', 'github.com/goftp/server']
+  args: ['install', 'github.com/goftp/server']
+  env: "GOPATH=golib"
 - name: 'gcr.io/cloud-builders/go'
-  args: ['build', 'github.com/google/go-querystring']
+  args: ['install', 'github.com/google/go-querystring']
+  env: "GOPATH=golib"
 - name: 'gcr.io/cloud-builders/go'
-  args: ['build', 'github.com/gopherjs/gopherjs']
+  args: ['install', 'github.com/gopherjs/gopherjs']
+  env: "GOPATH=golib"
 - name: 'gcr.io/cloud-builders/go'
-  args: ['build', 'github.com/jlaffaye/ftp']
+  args: ['install', 'github.com/jlaffaye/ftp']
+  env: "GOPATH=golib"
 - name: 'gcr.io/cloud-builders/go'
-  args: ['build', 'github.com/jzelinskie/whirlpool']
+  args: ['install', 'github.com/jzelinskie/whirlpool']
+  env: "GOPATH=golib"
 - name: 'gcr.io/cloud-builders/go'
-  args: ['build', 'github.com/kardianos/osext']
+  args: ['install', 'github.com/kardianos/osext']
+  env: "GOPATH=golib"
 - name: 'gcr.io/cloud-builders/go'
-  args: ['build', 'github.com/kisielk/gotool']
+  args: ['install', 'github.com/kisielk/gotool']
+  env: "GOPATH=golib"
 - name: 'gcr.io/cloud-builders/go'
-  args: ['build', 'github.com/koofr/go-httpclient']
+  args: ['install', 'github.com/koofr/go-httpclient']
+  env: "GOPATH=golib"
 - name: 'gcr.io/cloud-builders/go'
-  args: ['build', 'github.com/koofr/go-koofrclient']
+  args: ['install', 'github.com/koofr/go-koofrclient']
+  env: "GOPATH=golib"
 - name: 'gcr.io/cloud-builders/go'
-  args: ['build', 'github.com/kr/fs']
+  args: ['install', 'github.com/kr/fs']
+  env: "GOPATH=golib"
 - name: 'gcr.io/cloud-builders/go'
-  args: ['build', 'github.com/kr/pretty']
+  args: ['install', 'github.com/kr/pretty']
+  env: "GOPATH=golib"
 - name: 'gcr.io/cloud-builders/go'
-  args: ['build', 'github.com/mattn/go-runewidth']
+  args: ['install', 'github.com/mattn/go-runewidth']
+  env: "GOPATH=golib"
 - name: 'gcr.io/cloud-builders/go'
-  args: ['build', 'github.com/mitchellh/go-homedir']
+  args: ['install', 'github.com/mitchellh/go-homedir']
+  env: "GOPATH=golib"
 - name: 'gcr.io/cloud-builders/go'
-  args: ['build', 'github.com/ncw/go-acd']
+  args: ['install', 'github.com/ncw/go-acd']
+  env: "GOPATH=golib"
 - name: 'gcr.io/cloud-builders/go'
-  args: ['build', 'github.com/ncw/swift']
+  args: ['install', 'github.com/ncw/swift']
+  env: "GOPATH=golib"
 - name: 'gcr.io/cloud-builders/go'
-  args: ['build', 'github.com/neelance/astrewrite']
+  args: ['install', 'github.com/neelance/astrewrite']
+  env: "GOPATH=golib"
 - name: 'gcr.io/cloud-builders/go'
-  args: ['build', 'github.com/neelance/sourcemap']
+  args: ['install', 'github.com/neelance/sourcemap']
+  env: "GOPATH=golib"
 - name: 'gcr.io/cloud-builders/go'
-  args: ['build', 'github.com/nsf/termbox-go']
+  args: ['install', 'github.com/nsf/termbox-go']
+  env: "GOPATH=golib"
 - name: 'gcr.io/cloud-builders/go'
-  args: ['build', 'github.com/okzk/sdnotify']
+  args: ['install', 'github.com/okzk/sdnotify']
+  env: "GOPATH=golib"
 - name: 'gcr.io/cloud-builders/go'
-  args: ['build', 'github.com/onsi/ginkgo']
+  args: ['install', 'github.com/onsi/ginkgo']
+  env: "GOPATH=golib"
 - name: 'gcr.io/cloud-builders/go'
-  args: ['build', 'github.com/onsi/gomega']
+  args: ['install', 'github.com/onsi/gomega']
+  env: "GOPATH=golib"
 - name: 'gcr.io/cloud-builders/go'
-  args: ['build', 'github.com/patrickmn/go-cache']
+  args: ['install', 'github.com/patrickmn/go-cache']
+  env: "GOPATH=golib"
 - name: 'gcr.io/cloud-builders/go'
-  args: ['build', 'github.com/pengsrc/go-shared']
+  args: ['install', 'github.com/pengsrc/go-shared']
+  env: "GOPATH=golib"
 - name: 'gcr.io/cloud-builders/go'
-  args: ['build', 'github.com/pkg/errors']
+  args: ['install', 'github.com/pkg/errors']
+  env: "GOPATH=golib"
 - name: 'gcr.io/cloud-builders/go'
-  args: ['build', 'github.com/pkg/sftp']
+  args: ['install', 'github.com/pkg/sftp']
+  env: "GOPATH=golib"
 - name: 'gcr.io/cloud-builders/go'
-  args: ['build', 'github.com/rfjakob/eme']
+  args: ['install', 'github.com/rfjakob/eme']
+  env: "GOPATH=golib"
 - name: 'gcr.io/cloud-builders/go'
-  args: ['build', 'github.com/sevlyar/go-daemon']
+  args: ['install', 'github.com/sevlyar/go-daemon']
+  env: "GOPATH=golib"
 - name: 'gcr.io/cloud-builders/go'
-  args: ['build', 'github.com/shurcooL/httpfs']
+  args: ['install', 'github.com/shurcooL/httpfs']
+  env: "GOPATH=golib"
 - name: 'gcr.io/cloud-builders/go'
-  args: ['build', 'github.com/sirupsen/logrus']
+  args: ['install', 'github.com/sirupsen/logrus']
+  env: "GOPATH=golib"
 - name: 'gcr.io/cloud-builders/go'
-  args: ['build', 'github.com/skratchdot/open-golang']
+  args: ['install', 'github.com/skratchdot/open-golang']
+  env: "GOPATH=golib"
 - name: 'gcr.io/cloud-builders/go'
-  args: ['build', 'github.com/smartystreets/assertions']
+  args: ['install', 'github.com/smartystreets/assertions']
+  env: "GOPATH=golib"
 - name: 'gcr.io/cloud-builders/go'
-  args: ['build', 'github.com/smartystreets/goconvey']
+  args: ['install', 'github.com/smartystreets/goconvey']
+  env: "GOPATH=golib"
 - name: 'gcr.io/cloud-builders/go'
-  args: ['build', 'github.com/spf13/cobra']
+  args: ['install', 'github.com/spf13/cobra']
+  env: "GOPATH=golib"
 - name: 'gcr.io/cloud-builders/go'
-  args: ['build', 'github.com/spf13/pflag']
+  args: ['install', 'github.com/spf13/pflag']
+  env: "GOPATH=golib"
 - name: 'gcr.io/cloud-builders/go'
-  args: ['build', 'github.com/stretchr/testify']
+  args: ['install', 'github.com/stretchr/testify']
+  env: "GOPATH=golib"
 - name: 'gcr.io/cloud-builders/go'
-  args: ['build', 'github.com/t3rm1n4l/go-mega']
+  args: ['install', 'github.com/t3rm1n4l/go-mega']
+  env: "GOPATH=golib"
 - name: 'gcr.io/cloud-builders/go'
-  args: ['build', 'github.com/xanzy/ssh-agent']
+  args: ['install', 'github.com/xanzy/ssh-agent']
+  env: "GOPATH=golib"
 - name: 'gcr.io/cloud-builders/go'
-  args: ['build', 'github.com/yunify/qingstor-sdk-go']
+  args: ['install', 'github.com/yunify/qingstor-sdk-go']
+  env: "GOPATH=golib"
 - name: 'gcr.io/cloud-builders/go'
-  args: ['build', 'go.etcd.io/bbolt']
+  args: ['install', 'go.etcd.io/bbolt']
+  env: "GOPATH=golib"
 - name: 'gcr.io/cloud-builders/go'
-  args: ['build', 'golang.org/x/crypto']
+  args: ['install', 'golang.org/x/crypto']
+  env: "GOPATH=golib"
 - name: 'gcr.io/cloud-builders/go'
-  args: ['build', 'golang.org/x/net']
+  args: ['install', 'golang.org/x/net']
+  env: "GOPATH=golib"
 - name: 'gcr.io/cloud-builders/go'
-  args: ['build', 'golang.org/x/oauth2']
+  args: ['install', 'golang.org/x/oauth2']
+  env: "GOPATH=golib"
 - name: 'gcr.io/cloud-builders/go'
-  args: ['build', 'golang.org/x/sync']
+  args: ['install', 'golang.org/x/sync']
+  env: "GOPATH=golib"
 - name: 'gcr.io/cloud-builders/go'
-  args: ['build', 'golang.org/x/sys']
+  args: ['install', 'golang.org/x/sys']
+  env: "GOPATH=golib"
 - name: 'gcr.io/cloud-builders/go'
-  args: ['build', 'golang.org/x/text']
+  args: ['install', 'golang.org/x/text']
+  env: "GOPATH=golib"
 - name: 'gcr.io/cloud-builders/go'
-  args: ['build', 'golang.org/x/time']
+  args: ['install', 'golang.org/x/time']
+  env: "GOPATH=golib"
 - name: 'gcr.io/cloud-builders/go'
-  args: ['build', 'google.golang.org/api']
+  args: ['install', 'google.golang.org/api']
+  env: "GOPATH=golib"
 - name: 'gcr.io/cloud-builders/go'
-  args: ['build', 'google.golang.org/genproto']
+  args: ['install', 'google.golang.org/genproto']
+  env: "GOPATH=golib"
 - name: 'gcr.io/cloud-builders/go'
-  args: ['build', 'google.golang.org/grpc']
+  args: ['install', 'google.golang.org/grpc']
+  env: "GOPATH=golib"
 - name: 'gcr.io/cloud-builders/go'
-  args: ['build', 'gopkg.in/yaml.v2']
+  args: ['install', 'gopkg.in/yaml.v2']
+  env: "GOPATH=golib"
 - name: 'gcr.io/cloud-builders/go'
   args: ['build', 'rclone.go']
-steps:
-- name: 'gcr.io/cloud-builders/git'
-  args: ['clone', 'https://github.com/rclone/rclone']
-  env: ['PROJECT_ROOT=~/rclone']
+  env: "GOPATH=."
+
