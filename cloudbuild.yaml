@@ -199,6 +199,6 @@ steps:
     env: ['GOPATH=golib']
   - name: 'gcr.io/cloud-builders/go'
     args: ['build', '-v', 'rclone.go']
-    env: ['GOPATH=~/']
+    env: ['GOPATH=~/rclone']
 
 
